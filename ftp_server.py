@@ -1,9 +1,11 @@
+#!/usr/bin/python3
+
 import socket
 import select
 import os
 
 HOST = '0.0.0.0'
-PORT = 2121
+PORT = 2122
 ROOT_DIR = './ftp_root'
 
 os.makedirs(ROOT_DIR, exist_ok=True)

@@ -1,7 +1,8 @@
+#!/usr/bin/python3
 import socket
 
 HOST = '127.0.0.1'
-PORT = 2121
+PORT = 2122
 
 def main():
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
