@@ -16,7 +16,7 @@ def recv_until_prompt(sock, end_prompt=b"ftp> "):
 def main():
     parser = argparse.ArgumentParser(description="Simple FTP Client")
     parser.add_argument('--host', default='127.0.0.1', help='FTP server host (default: 127.0.0.1)')
-    parser.add_argument('--port', type=int, default=2121, help='FTP server port (default: 2121)')
+    parser.add_argument('--port', type=int, default=2122, help='FTP server port (default: 2121)')
     args = parser.parse_args()
 
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -34,7 +34,7 @@ def main():
 
             if "ftp>" in response:
                 while True:
-                    cmd = input("ftp> ")
+                    cmd = input()
                     if not cmd:
                         continue
                     s.sendall((cmd + "\n").encode())

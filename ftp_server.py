@@ -12,8 +12,8 @@ HOST = '0.0.0.0'
 PORT = 2122
 ROOT_DIR = './ftp_root'
 USER_DB = './users.json'
-LOG_FILE = './ftp.log'
-HONEYPOT_LOG = './honeypot.log'
+LOG_FILE = './ftp_root/admin/ftp.log'
+HONEYPOT_LOG = './ftp_root/admin/honeypot.log'
 MAX_FAILED_ATTEMPTS = 3
 SUSPICIOUS_USERS = ['root', 'admin123', 'toor']
 
